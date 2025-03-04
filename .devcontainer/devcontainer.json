@@ -1,0 +1,22 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack"
+			],
+			"settings": {
+				"github.copilot.chat.codeGeneration.instructions": [
+					{
+						"text": "This workspace uses Java to build an Android app. The `gradle`, `sdkmanager`, `avdmanager` and `emulator` commands are on the `PATH`. Android build tools version 34.0.0 are installed. There is one `pixel_3a` AVD with name `test_avd`. Use https://github.com/jaredsburrows/android-gradle-java-app-template/archive/refs/heads/master.zip as scaffold."
+					}
+				]
+			}
+		}
+	},
+	"runArgs": [
+		"--privileged"
+	]
+}
